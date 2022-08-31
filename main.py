@@ -23,15 +23,16 @@ age = int(input("Hur gammal är du?"))
 location = input("Var är du") # K eller S
 promilleHalt = float(input("Din promillehalt")) # flyttal
 
-if promilleHalt < 1.0:
-    if age >= 18 and location == "K":
-        print("Japp du får köpa")
-    elif age >= 20 and location == "S":
-        print("Japp du får köpa")
-    else:
-        print("Nope ingen öl")        
-else:
-    print("Nope ingen öl")        
+# if promilleHalt < 1.0:
+#     if age >= 18 and location == "K":
+#         print("Japp du får köpa")
+#     elif age >= 20 and location == "S":
+#         print("Japp du får köpa")
+#     else:
+#         print("Nope ingen öl")        
+# else:
+#     print("Nope ingen öl")        
+
 # if promilleHalt >= 1.0:
 #     print("Nope ingen öl")
 # elif age >= 18 and location == "K":
@@ -41,12 +42,12 @@ else:
 # else:
 #     print("Nope ingen öl")    
 
-# if age >= 18 and location == "K" and promilleHalt < 1.0:
-#     print("Japp du får köpa")
-# elif age >= 20 and location == "S" and promilleHalt < 1.0:
-#     print("Japp du får köpa")
-# else:    
-#     print("Nope ingen öl")
+if age >= 18 and location == "K" and promilleHalt < 1.0:
+    print("Japp du får köpa")
+elif age >= 20 and location == "S" and promilleHalt < 1.0:
+    print("Japp du får köpa")
+else:    
+    print("Nope ingen öl")
 
 
 
